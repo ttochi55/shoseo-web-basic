@@ -1,0 +1,312 @@
+<!doctype html>
+<html lang="ko">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Required meta tags -->
+
+  <title>Title</title>
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <!-- Embeded CSS -->
+  <style>
+    .scroll-top {
+      position: fixed;
+      bottom: 0;
+      right: 0;
+      width: 50px;
+      height: 50px;
+      margin: 10px;
+      background: #222;
+      color: #fff;
+      text-align: center;
+      line-height: 50px;
+      text-decoration: none;
+    }
+
+    .scroll-top:hover {
+      color: #fff;
+      text-decoration: none;
+    }
+  </style>
+</head>
+
+<body class="pt-3">
+
+  <header class="container">
+    <nav class="navbar navbar-dark bg-dark">
+
+      <!-- Brand -->
+      <a class="navbar-brand" href="#">
+        <img src="img/logo.png" width="162" height="48" class="d-inline-block align-top bg-white" alt="로고"
+          loading="lazy">
+      </a>
+
+      <!-- Menu -->
+      <ul class="navbar-nav mr-auto" style="flex-wrap: nowrap;flex-direction: row;">
+        <li class="nav-item pr-2">
+          <a class="nav-link" href="#">홈</a>
+        </li>
+        <li class="nav-item pr-2 active">
+          <a class="nav-link" href="#">스마트폰</a>
+        </li>
+      </ul>
+
+      <!-- Sign -->
+      <form class="form-inline flex-column align-items-end mr-3">
+        <button class="btn btn-sm btn-outline-light mb-1" type="submit">로그아웃</button>
+        <span class="small text-white">홍길동님 반갑습니다.</span>
+      </form>
+
+      <!-- Weather -->
+      <span class="navbar-text">
+        <img src="img/partly_cloudy.png" width="64" height="64" alt="날씨">
+      </span>
+
+    </nav>
+  </header>
+
+  <div class="container">
+    <div class="row">
+      <aside class="col col-2 pt-2">
+
+        <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+
+          <ul class="nav nav-pills">
+            <li class="nav-item">
+              <a class="nav-link active" id="v-pills-history-tab" data-toggle="pill" href="#v-pills-history" role="tab"
+                aria-controls="v-pills-history" aria-selected="true">역사</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="v-pills-android-tab" data-toggle="pill" href="#v-pills-android" role="tab"
+                aria-controls="v-pills-android" aria-selected="false">안드로이드폰</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="v-pills-iphone-tab" data-toggle="pill" href="#v-pills-iphone" role="tab"
+                aria-controls="v-pills-iphone" aria-selected="false">아이폰</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
+                aria-expanded="false">출시예정</a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" id="v-pills-2020s20-tab" data-toggle="pill" href="#v-pills-2020s20" role="tab"
+                  aria-controls="v-pills-2020s20" aria-selected="false">삼성 갤럭시 S20</a>
+                <a class="dropdown-item" id="v-pills-2020zflip-tab" data-toggle="pill" href="#v-pills-2020zflip"
+                  role="tab" aria-controls="v-pills-2020zflip" aria-selected="false">삼성 갤럭시 Z 플립</a>
+                <a class="dropdown-item" id="v-pills-2020g9-tab" data-toggle="pill" href="#v-pills-2020g9" role="tab"
+                  aria-controls="v-pills-2020g9" aria-selected="false">엘지 G9</a>
+                <a class="dropdown-item" id="v-pills-2020v60-tab" data-toggle="pill" href="#v-pills-2020v60" role="tab"
+                  aria-controls="v-pills-2020v60" aria-selected="false">엘지 V60</a>
+                <a class="dropdown-item" id="v-pills-2020laser-tab" data-toggle="pill" href="#v-pills-2020laser"
+                  role="tab" aria-controls="v-pills-2020laser" aria-selected="false">모토롤라 레이저 폴더블폰</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+      </aside>
+      <main class="col col-10 pt-2 border-left">
+        <div class="tab-content" id="v-pills-tabContent">
+
+          <div class="tab-pane fade show active" id="v-pills-history" role="tabpanel"
+            aria-labelledby="v-pills-history-tab">
+
+            <nav aria-label="breadcrumb">
+              <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="#">홈</a></li>
+                <li class="breadcrumb-item"><a href="#">스마트폰</a></li>
+                <li class="breadcrumb-item active" aria-current="page">역사</li>
+              </ol>
+            </nav>
+
+            <h2>역사</h2>
+            <p>스마트폰(Smartphone)은 소프트웨어의 호환성이 높고, 전화 가능한 휴대 전화이다. 스마트폰은 표준화된 인터페이스와 플랫폼을 기반한 운영 체제로 종합 구성한 전화통신기기로 보일 수도 있겠고[1] 스마트폰은 전자 우편, 인터넷 검색, 텍스트 읽고, 쓰고 저장하기, 추가적인 앱설치로, 응용기기로의 기능사용이 가능하고 내장형 키보드나 외장 USB 키보드, 외부 출력 가능한 VGA 단자, HDMI 단자로 확장기기 연결되는 소형 전자컴퓨팅 기기로 사용. 또한, 무선 인터넷 접속기능을 이용하여 인터넷 및 인트라넷에 직접 접속할 수 있을 뿐만 아니라 그룹웨어로의 연동이 가능하다.</p>
+
+            <p>또한 무료 및 유료 앱, 다양한 앱을 사용자의 상황에 맞추어 선택 및 설치 할 수 있고, 스마트폰 사용자가 원하는 애플리케이션을 직접 제작할 수도 있는 점, 그리고 같은 운영 체제를 가진 스마트폰 간에 애플리케이션을 공유할 수 있는 점 등도 기존 피처폰(Feature Phone)이 갖지 않은 장점이 있다. 하지만 스마트폰 과다 사용으로 인한 거북목 증후군, 스마트폰 중독 등 여러 가지 다른 단점이 나타날 수 있다.</p>
+
+          </div><!-- .tab-pane -->
+
+
+
+          <div class="tab-pane fade" id="v-pills-android" role="tabpanel" aria-labelledby="v-pills-android-tab">
+
+            <nav aria-label="breadcrumb">
+              <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="#">홈</a></li>
+                <li class="breadcrumb-item"><a href="#">스마트폰</a></li>
+                <li class="breadcrumb-item active" aria-current="page">안드로이드폰</li>
+              </ol>
+            </nav>
+
+            <h2>안드로이드폰</h2>
+            <p>안드로이드(영어: Android)는 휴대 전화를 비롯한 휴대용 장치를 위한 운영 체제와 미들웨어, 사용자 인터페이스 그리고 표준 응용 프로그램(웹 브라우저, 이메일 클라이언트, 단문 메시지 서비스(SMS), MMS 등을 포함하고 있는 소프트웨어 스택이자 모바일 운영 체제이다. 안드로이드는 개발자들이 자바 와 코틀린 언어로 응용 프로그램을 작성할 수 있게 하였으며, 컴파일된 바이트코드를 구동할 수 있는 런타임 라이브러리를 제공한다. 또한 안드로이드 소프트웨어 개발 키트(SDK)를 통해 응용 프로그램을 개발하는 데 필요한 각종 도구와 응용 프로그램 인터페이스(API)를 제공한다.</p>
+
+            <p>안드로이드는 리눅스 커널 위에서 동작하며, 자바와 코틀린으로 앱을 만들어 동작한다. 또한 다양한 안드로이드 시스템 구성 요소에서 사용되는 C/C++ 라이브러리들을 포함하고 있다. 안드로이드는 기존의 자바 가상 머신과는 다른 가상 머신인 안드로이드 런타임을 통해 자바와 코틀린으로 작성된 응용 프로그램을 별도의 프로세스에서 실행하는 구조로 되어 있다.</p>
+
+          </div><!-- .tab-pane -->
+
+
+
+          <div class="tab-pane fade" id="v-pills-iphone" role="tabpanel" aria-labelledby="v-pills-iphone-tab">
+
+            <nav aria-label="breadcrumb">
+              <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="#">홈</a></li>
+                <li class="breadcrumb-item"><a href="#">스마트폰</a></li>
+                <li class="breadcrumb-item active" aria-current="page">아이폰</li>
+              </ol>
+            </nav>
+
+            <h2>아이폰</h2>
+            <p><a href="https://ko.wikipedia.org/wiki/%EC%95%84%EC%9D%B4%ED%8F%B0">아이폰(영어: iPhone)</a>은 미국 애플이 디자인하고 마케팅한 터치스크린 기반 스마트폰 계열이다. 애플의 iOS 모바일 운영 체제를 사용한다. 1세대 아이폰은 애플의 공동 창립자 스티브 잡스가 2007년 1월 9일 발표하였다. 그 뒤로 애플은 해마다 새로운 아이폰 모델과 iOS 업데이트를 출시해왔다. 2018년 11월 1일 기준으로, 2,200,000,000대 이상의 아이폰이 판매되었다.</p>
+
+            <p>아이폰의 사용자 인터페이스는 가상 키보드를 갖춘 멀티 터치 화면으로 구성된다. 아이폰은 셀룰러 망이나 와이파이에 연결되며, 통화, 웹 브라우징, 사진 촬영, 음악 재생, 이메일과 텍스트 메시지 송수신을 할 수 있다. 아이폰 런칭 이후 더 많은 기능들이 추가되었는데, 여기에는 더 큰 화면 크기, 동영상 촬영, 방수 기능, 앱 스토어를 경유한 서드파티 모바일 앱의 설치 기능, 접근성 지원이 포함된다. 2017년까지 아이폰은 전면 패널에 사용자를 홈 스크린으로 복귀시키는 하나의 버튼을 갖춘 레이아웃을 사용하였다. 2017년 이후로, 더 값비싼 아이폰 모델들은 제스처 인식에 의해 앱 전환 활성화가 가능한, 베젤리스에 가까운 전면 화면 디자인으로 전환하였다.</p>
+
+          </div><!-- .tab-pane -->
+
+
+
+          <div class="tab-pane fade" id="v-pills-2020s20" role="tabpanel" aria-labelledby="v-pills-2020s20-tab">
+
+            <nav aria-label="breadcrumb">
+              <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="#">홈</a></li>
+                <li class="breadcrumb-item"><a href="#">스마트폰</a></li>
+                <li class="breadcrumb-item active" aria-current="page">출시예정</li>
+              </ol>
+            </nav>
+
+            <h2>Galaxy s20</h2>
+            <img class="img-fluid" src="img/samsung-galaxy-s10.jpg" alt="삼성 갤럭시 S20">
+
+            <br><br>
+
+            <h3>특징</h3>
+            <p>1억 800만 화소 사양의 카메라</p>
+
+          </div><!-- .tab-pane -->
+
+
+          <div class="tab-pane fade" id="v-pills-2020zflip" role="tabpanel" aria-labelledby="v-pills-2020zflip-tab">
+
+            <nav aria-label="breadcrumb">
+              <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="#">홈</a></li>
+                <li class="breadcrumb-item"><a href="#">스마트폰</a></li>
+                <li class="breadcrumb-item active" aria-current="page">출시예정</li>
+              </ol>
+            </nav>
+
+            <h2>삼성 갤럭시 Z 플립</h2>
+            <img class="img-fluid" src="img/samsung-galaxy-z.jpg" alt="삼성 갤럭시 Z 플립">
+
+            <br><br>
+
+            <h3>특징</h3>
+            <p>상하로 접었다 펴는 형태</p>
+
+          </div><!-- .tab-pane -->
+
+
+
+          <div class="tab-pane fade" id="v-pills-2020g9" role="tabpanel" aria-labelledby="v-pills-2020g9-tab">
+
+            <nav aria-label="breadcrumb">
+              <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="#">홈</a></li>
+                <li class="breadcrumb-item"><a href="#">스마트폰</a></li>
+                <li class="breadcrumb-item active" aria-current="page">출시예정</li>
+              </ol>
+            </nav>
+
+            <h2>엘지 G9</h2>
+            <img class="img-fluid" src="img/lg-g8.jpg" alt="엘지 G9">
+
+            <br><br>
+
+            <h3>특징</h3>
+            <p>세컨드 스크린 영역이 넓어짐</p>
+
+          </div><!-- .tab-pane -->
+
+
+
+          <div class="tab-pane fade" id="v-pills-2020v60" role="tabpanel" aria-labelledby="v-pills-2020v60-tab">
+
+            <nav aria-label="breadcrumb">
+              <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="#">홈</a></li>
+                <li class="breadcrumb-item"><a href="#">스마트폰</a></li>
+                <li class="breadcrumb-item active" aria-current="page">출시예정</li>
+              </ol>
+            </nav>
+
+            <h2>엘지 V60</h2>
+            <img class="img-fluid" src="img/lg-v50s.jpg" alt="엘지 V60">
+
+            <br><br>
+
+            <h3>특징</h3>
+            <p>듀얼스크린</p>
+
+          </div><!-- .tab-pane -->
+
+
+
+          <div class="tab-pane fade" id="v-pills-2020laser" role="tabpanel" aria-labelledby="v-pills-2020laser-tab">
+
+            <nav aria-label="breadcrumb">
+              <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="#">홈</a></li>
+                <li class="breadcrumb-item"><a href="#">스마트폰</a></li>
+                <li class="breadcrumb-item active" aria-current="page">출시예정</li>
+              </ol>
+            </nav>
+
+            <h2>모토롤라 레이저 폴더블폰</h2>
+            <img class="img-fluid" src="img/motorola.jpg" alt="모토롤라 레이저 폴더블폰">
+
+            <br><br>
+
+            <h3>특징</h3>
+            <p>...</p>
+
+          </div><!-- .tab-pane -->
+
+
+        </div><!-- tab-content -->
+      </main><!-- .main -->
+    </div><!-- .row -->
+  </div><!-- .container -->
+
+  <footer class="container p-3 border-top bg-light">
+    <div class="row">
+      <div class="col">
+
+        <a class="scroll-top" href="#">Top</a>
+
+        <p class="text-center">Copyright ⓒ 2020 Hoseo Institute of Big Data</p>
+
+      </div><!-- .col -->
+    </div><!-- .row -->
+  </footer>
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,58 @@
+@font-face {
+  font-family: "휴먼 편지체";
+  src: url("HMFMPYUN.TTF") format("truetype");
+}
+
+h1 {
+  text-align: center;
+  color: brown;
+}
+
+h2 {
+  color: blue;
+  text-shadow: 3px 3px 6px blue;
+}
+
+ul {
+  border: 1px dashed black;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  text-indent: 1em;
+  font-family: "휴먼 편지체";
+  font-size: 1em;
+}
+
+label {
+  font-family: "휴먼 편지체";
+  font-size: 1em;
+}
+
+body {
+  background-color: aliceblue;
+}
+
+header {
+  border-bottom: 1px solid black;
+}
+
+section {
+  background-color: #e91e63a6;
+  margin: 10px;
+  padding: 0 10px;
+}
+
+footer {
+  background-color: orange;
+  border-radius: 10px;
+}
+
+.field-title {
+  font-size: 18px;
+  font-weight: 700;
+  color: #3f51b5;
+}
